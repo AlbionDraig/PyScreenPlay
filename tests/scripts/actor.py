@@ -15,6 +15,7 @@ class Task:
 class BrowseTheWeb(Task):
     def perform_as(self, actor):
         actor.using_browser(webdriver.Chrome())
+        actor.browser.maximize_window()
 
 class Open(Task):
     def __init__(self, url):
@@ -41,3 +42,10 @@ class Click(Task):
 class GetPageName(Task):
     def perform_as(self, actor):
         return actor.browser.title
+
+class GetText(Task):
+    def __init__(self, element):
+        self.element = element
+
+    def perform_as(self, actor):
+        return actor.browser.find_element(*self.element).text

@@ -3,3 +3,6 @@ class LoginPageData:
     USER = 'standard_user'
     PASSWORD = 'secret_sauce'
     PAGE_NAME = 'Swag Labs'
+    
+class AddToCartData:
+    TEXT_CART = 'Your Cart'
