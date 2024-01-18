@@ -11,3 +11,11 @@ class AddToCartLocator:
     ADD_T_SHIRT = (By.ID, 'add-to-cart-test.allthethings()-t-shirt-(red)')
     ADD_CART = (By.ID, 'shopping_cart_container')
     TEXT_CART = (By.XPATH, '//*[@id="header_container"]/div[2]/span')
+    
+class ChechoutLocator:
+    CHECKOUT_BUTTON = (By.ID, 'checkout')
+    FIRST_NAME_INPUT = (By.ID, 'first-name')
+    LAST_NAME_INPUT = (By.ID, 'last-name')
+    ZIP_INPUT = (By.ID, 'postal-code')
+    TEXT_CHECKOUT = (By.XPATH, '//*[@id="header_container"]/div[2]/span')
+    CONTINUE_BUTTON = (By.ID, 'continue')

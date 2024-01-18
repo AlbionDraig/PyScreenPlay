@@ -6,3 +6,9 @@ class LoginPageData:
     
 class AddToCartData:
     TEXT_CART = 'Your Cart'
+    
+class CheckoutData:
+    FIRST_NAME = 'Albion'
+    LAST_NAME = 'Draig'
+    ZIP = 'Sudo'
+    TEXT_CHECKOUT = 'Checkout: Overview'
