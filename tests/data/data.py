@@ -12,3 +12,6 @@ class CheckoutData:
     LAST_NAME = 'Draig'
     ZIP = 'Sudo'
     TEXT_CHECKOUT = 'Checkout: Overview'
+    
+class FinishData:
+    TEXT_FINISH = 'Products'

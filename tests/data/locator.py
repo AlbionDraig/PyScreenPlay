@@ -19,3 +19,8 @@ class ChechoutLocator:
     ZIP_INPUT = (By.ID, 'postal-code')
     TEXT_CHECKOUT = (By.XPATH, '//*[@id="header_container"]/div[2]/span')
     CONTINUE_BUTTON = (By.ID, 'continue')
+    
+class FinishLocator:
+    FINISH_BUTTON = (By.ID, 'finish')
+    TEXT_FINISH = (By.XPATH, '//*[@id="header_container"]/div[2]/span')
+    BACK_BUTTON = (By.ID, 'back-to-products')

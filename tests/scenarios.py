@@ -50,3 +50,17 @@ def checkout(actor):
     # Verify result
     assert GetText(element=COL.TEXT_CHECKOUT).perform_as(actor) == COD.TEXT_CHECKOUT
     
+from data.locator import FinishLocator as FL
+from data.data import FinishData as FD
+def finish(actor):
+    # Define tasks
+    scenario = (
+        Click(element=FL.FINISH_BUTTON),
+        Click(element=FL.BACK_BUTTON)
+    )
+    # Execute scenario
+    for task in scenario:
+        task.perform_as(actor)
+    # Verify result
+    assert GetText(element=FL.TEXT_FINISH).perform_as(actor) == FD.TEXT_FINISH
+    
